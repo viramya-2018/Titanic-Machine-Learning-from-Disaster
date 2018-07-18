@@ -33,7 +33,6 @@ clf.fit(X_train, y_train)
 print accuracy_score(y_test, np.array(clf.predict(X_test)))
 
 X_testData = testData[:,1:]
-
 predictLabel_submit = np.array(clf.predict(X_testData))
 
 directory = "../result/"
